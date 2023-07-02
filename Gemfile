@@ -69,3 +69,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "slim-rails", "~> 3.6"
+
+gem "html2slim", "~> 0.2.0", :group => :development
