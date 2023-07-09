@@ -9,4 +9,11 @@ html
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
   body
-    = yield
+    .navbar.bg-base-300.sticky.top-0
+      .navbar-start
+        = link_to "Example", root_path, class: 'btn btn-ghost normal-case text-xl'
+      .navbar-center
+      .navbar-end
+        = button_to "Login", '', method: :post, data: { turbo: false }, class: 'btn'
+    .container
+      = yield
